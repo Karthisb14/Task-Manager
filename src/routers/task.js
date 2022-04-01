@@ -47,7 +47,7 @@ router.get('/tasks', auth, async (req, res) => {
     } catch (e) {
         res.status(500).send()
     }
-})
+}) 
 
 router.get('/tasks/:id', auth, async (req, res) => {
     const _id = req.params.id
